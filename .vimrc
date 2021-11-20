@@ -73,6 +73,9 @@ map <C-n> :NERDTreeToggle<CR>
 " Changes to vim-airline 
 let g:airline_powerline_fonts = 1
 let g:airline_extensions = ["branch", "virtualenv", "wordcount"]
-let g:airline_section_y = ''
-let g:airline_section_z = airline#section#create(['%3p%% %3l/%L:%3v'])
-let g:airline_theme = 'atomic'
+let g:airline_section_y = ""
+let g:airline_section_z = airline#section#create(["%3p%% %3l/%L:%3v"])
+let g:airline_theme = "atomic"
+
+" Changes to tmuxline
+let g:tmuxline_theme = "atomic"
