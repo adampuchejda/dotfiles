@@ -37,11 +37,17 @@ set number
 set backspace=indent,eol,start
 
 " Set tab to 4 spaces
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 
 " Set colorscheme
 colorscheme happy_hacking
+
+" Check if vim-plug is installed and set up
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+endif
 
 " Plugins using vim-plug Vim plugin manager
 call plug#begin('~/.vim/plugged')
