@@ -62,6 +62,12 @@ Plug 'python-mode/python-mode'
 " Javascript
 Plug 'pangloss/vim-javascript'
 
+" vim-polyglot
+Plug 'sheerun/vim-polyglot'
+
+" ale - for linting (syntax checking and semantic errors)
+Plug 'dense-analysis/ale'
+
 " Rust
 Plug 'rust-lang/rust.vim'
 
@@ -76,6 +82,3 @@ let g:airline_extensions = ["branch", "virtualenv", "wordcount"]
 let g:airline_section_y = ""
 let g:airline_section_z = airline#section#create(["%3p%% %3l/%L:%3v"])
 let g:airline_theme = "atomic"
-
-" Changes to tmuxline
-let g:tmuxline_theme = "atomic"
