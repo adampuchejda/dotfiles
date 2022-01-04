@@ -3,7 +3,7 @@ set nocompatible
 
 " Enable syntax highlighting
 if has('syntax')
-   syntax on
+   syntax enable
 endif
 
 " Autowrite buffers
@@ -43,7 +43,7 @@ set tabstop=2
 " Set colorscheme
 colorscheme happy_hacking
 
-" Check if vim-plug is installed and set up
+" Check if plugin manager is set up
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -62,20 +62,26 @@ Plug 'edkolev/tmuxline.vim'
 "  NERDTree
 Plug 'preservim/nerdtree'
 
+" Wakatime - check your coding time
+Plug 'wakatime/vim-wakatime'
+
 " Python-mode
 Plug 'python-mode/python-mode'
 
 " Javascript
 Plug 'pangloss/vim-javascript'
 
-" vim-polyglot
-Plug 'sheerun/vim-polyglot'
-
-" ale - for linting (syntax checking and semantic errors)
-Plug 'dense-analysis/ale'
+" C++ 
+Plug 'octol/vim-cpp-enhanced-highlight'
 
 " Rust
 Plug 'rust-lang/rust.vim'
+
+" Vim-polyglot
+Plug 'sheerun/vim-polyglot'
+
+" Ale - for linting (syntax checking and semantic errors)
+Plug 'dense-analysis/ale'
 
 call plug#end()
 
@@ -87,4 +93,4 @@ let g:airline_powerline_fonts = 1
 let g:airline_extensions = ["branch", "virtualenv", "wordcount"]
 let g:airline_section_y = ""
 let g:airline_section_z = airline#section#create(["%3p%% %3l/%L:%3v"])
-let g:airline_theme = "atomic"
+let g:airline_theme = "cool"
