@@ -1,0 +1,41 @@
+# Happy Hacking mutt color scheme
+# Author: Adam Puchejda
+# Version: 0.1
+# License: MIT 
+# Website: https://github.com/adampuchejda/dotfiles/mutt/happy_hacking.mutt
+#
+# Inspired by Happy Hacking vim color scheme by Yorick Peterse 
+# (https://github.com/yorickpeterse/happy_hacking.vim, licensed under the MIT license)
+
+# Terminal (xterm) colors
+# white = color231
+# black0 = color0
+# black2 = color16
+# yellow = color221
+# blue = color103
+# green = color107
+# turqoise = color157
+# orange = color179
+# pink = color211
+# gold = color186
+# red = color203
+# gray1 = color59
+# gray2 = color102
+# gray3 = color145
+# gray4 = color237
+
+# Index, status etc. colors
+color index color102 color0 ~A
+color status color237 color203
+color markers color203 color16
+color indicator color0 color221 
+color normal color230 color0
+
+# Header colors
+color header color102 color0 ^Date:
+color header color102 color0 ^From:
+color header color102 color0  ^To:
+color header color102 color0 ^Reply-To:
+color header color102 color0 ^Cc:
+color header color102 color0 ^Subject:
+color header color102 color0 ^X-Mailer:

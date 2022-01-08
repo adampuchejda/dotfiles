@@ -1,0 +1,17 @@
+# Source default and encrypted account configuration
+source "gpg -dq ~/.mutt/credentials.gpg |"
+
+# Source mutt colors
+source "~/.mutt/happy_hacking.mutt"
+
+# Other options
+set mailcap_path = "~/.mutt/mailcap"
+set ssl_force_tls = yes
+set abort_nosubject = no
+set mail_check = 60
+set timeout = 10
+set sort = reverse-last-date-received
+set signature = "~/.mutt/signature"
+set copy = no
+auto_view text/html
+macro index 'a' "<tag-pattern>~R !~D<enter><tag-prefix><save-message>+[Gmail]/Wszystkie <enter>" "Archive"
