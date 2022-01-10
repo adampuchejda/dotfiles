@@ -15,3 +15,4 @@ set signature = "~/.mutt/signature"
 set copy = no
 auto_view text/html
 macro index 'a' "<tag-pattern>~R !~D<enter><tag-prefix><save-message>+[Gmail]/Wszystkie <enter>" "Archive"
+macro index,pager 'U' "<enter-command>set pipe_decode = yes<enter><pipe-message>urlview<enter><enter-command>set pipe-decode = no<enter>" "View URLs"
